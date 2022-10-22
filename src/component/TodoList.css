@@ -1,0 +1,14 @@
+.list-wrapper {
+  margin-top: 2em;
+}
+.float-right {
+  float: right;
+}
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-card {
+  margin: 10px;
+}

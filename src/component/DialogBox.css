@@ -1,0 +1,9 @@
+.float-right{
+    float:right;
+}
+.grid-elements{
+    margin: 10px;
+}
+.align-center{
+    align-items: center;
+}

@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom'
 import App from './App';
 
-test('renders learn react link', () => {
+//to check that my child component must be there to check it i can check if it contains a button
+test("render the Child with 1 buttons",async ()=>{
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const buttonList = await screen.findAllByRole("button");
+  expect(buttonList).toHaveLength(1);
 });
